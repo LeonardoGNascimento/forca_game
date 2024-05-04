@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  app:
+    image: forca_game
+    ports:
+      - 7010:80
+    deploy:
+      resources:
+        limits:
+          memory: 100M
+          cpus: '0.1'
