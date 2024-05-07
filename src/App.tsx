@@ -24,7 +24,7 @@ function App() {
           {vidas === 0 && <h1>PERDEU!! A palavra era {palavra}</h1>}
           {acertou && <h1>ACERTOU!! A palavra era {palavra}</h1>}
           <h2 className="mb-2">
-            Dica: {tema} - Vidas: {vidas}
+            Dica: {tema} - Lives: {vidas}
           </h2>
 
           {!reiniciar && palavra && vidas > 0 && (
