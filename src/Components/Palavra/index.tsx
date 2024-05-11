@@ -30,10 +30,10 @@ export function Palavra({ letraAtual, palavra, callBackAcerto, acertou }: Props)
   }, [acertou]);
 
   return (
-    <div className="mb-5 d-flex justify-content-center">
+    <div className="mb-5 flex justify-center">
       {palavra.map((item, index) => {
         if (item === " ") {
-          return <div className="me-3"></div>;
+          return <div className="mr-3"></div>;
         }
 
         return <Letra letra={item} key={index} letraAtual={letraAtual} setLetrasAcertadas={setLetrasAcertadas} acertou={acertou} />;

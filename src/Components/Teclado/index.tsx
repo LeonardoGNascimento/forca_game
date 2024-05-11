@@ -18,7 +18,7 @@ export function Teclado({ setLetraAtual, palavra, setVidas, acertou, disable = f
   return (
     <div>
       {linhas.map((item, index) => (
-        <div className="d-flex justify-content-center" key={index}>
+        <div className="flex justify-center gap-1" key={index}>
           {item.map((item2, index2) => (
             <Botao
               setVidas={setVidas}

@@ -1,5 +1,5 @@
+import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
-import { Button } from "react-bootstrap";
 
 interface Props {
   setLetraAtual(letraAtual: string): void;
@@ -33,7 +33,7 @@ export function Botao({ setLetraAtual, letra, palavra, setVidas, acertou, disabl
 
   return (
     <Button
-      variant={!click ? "light" : letraExiste ? "success" : "danger"}
+      className="mb-1"
       disabled={click || disable}
       onClick={() => {
         setLetraAtual(letra);
